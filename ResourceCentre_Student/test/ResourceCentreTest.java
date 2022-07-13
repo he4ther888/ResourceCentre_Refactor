@@ -148,7 +148,7 @@ public class ResourceCentreTest {
 		assertFalse("Test that non-esiting item is NOT ok to loan?", ok);
 
 	}
-	
+	 
 	@Test
 	public void testDoLoanChromebook() {
 		//fail("Not yet implemented");

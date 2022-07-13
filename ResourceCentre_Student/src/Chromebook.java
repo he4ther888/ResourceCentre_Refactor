@@ -6,7 +6,7 @@ public class Chromebook extends Item{
 		super(assetTag, description);
 		this.os = os;
 	}
-
+ 
 	public String getOs() {
 		return os;
 	}
