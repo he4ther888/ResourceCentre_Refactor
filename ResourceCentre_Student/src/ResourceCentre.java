@@ -6,6 +6,10 @@ public class ResourceCentre {
 		//student 1 - Koh Wee Ren
 		//student 2 - Heather
 		// student 3 - Jia Cheng
+
+
+	
+
 		ArrayList<Camcorder> camcorderList = new ArrayList<Camcorder>();
 		ArrayList<Chromebook> chromebookList = new ArrayList<Chromebook>();
 
