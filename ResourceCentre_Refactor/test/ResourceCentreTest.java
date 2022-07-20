@@ -7,6 +7,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class ResourceCentreTest {
+	//jia cheng
 	private Camcorder cc1;
 	private Camcorder cc2;
 	private Chromebook cb1;
