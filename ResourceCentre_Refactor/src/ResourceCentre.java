@@ -1,8 +1,10 @@
 import java.util.ArrayList;
 
 public class ResourceCentre {
-
-
+	
+	// tricia
+	
+	private static final int OPTION_RETURN = 4;
 	private static final int OPTION_LOAN = 3;
 	private static final int OPTION_ADD = 2;
 	private static final int OPTION_VIEW = 1;
@@ -69,7 +71,7 @@ public class ResourceCentre {
 					System.out.println("Invalid type");
 				}
 
-			} else if (option == 4) {
+			} else if (option == OPTION_RETURN) {
 				// Return item
 				ResourceCentre.setHeader("RETURN");				
 				itemTypeMenu();
@@ -136,7 +138,6 @@ public class ResourceCentre {
 		for (int i = 0; i < camcorderList.size(); i++) {
 
 			output += String.format("%-84s\n", camcorderList.get(i).toString());
-					
 		}
 		return output;
 	}
