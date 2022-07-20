@@ -1,8 +1,10 @@
 import java.util.ArrayList;
 
 public class ResourceCentre {
-
-
+	//heather
+	//joleen
+	// tricia
+	//jia cheng
 	private static final int OPTION_RETURN = 4;
 	private static final int OPTION_LOAN = 3;
 	private static final int OPTION_ADD = 2;
@@ -96,7 +98,9 @@ public class ResourceCentre {
 
 	}
 
+
 	public static void itemTypeMenu() {
+
 		ResourceCentre.setHeader("ITEM TYPES");
 		System.out.println("1. Camcorder");
 		System.out.println("2. Chromebook");
@@ -118,7 +122,7 @@ public class ResourceCentre {
 		System.out.println(header);
 		Helper.line(80, "-");
 	}
-
+	
 	public static String showAvailability(boolean isAvailable) {
 		String avail;
 
@@ -129,6 +133,10 @@ public class ResourceCentre {
 		}
 		return avail;
 	}
+	
+	
+
+	
 
 	//================================= Option 1 View (CRUD - Read) =================================
 	public static String retrieveAllCamcorder(ArrayList<Camcorder> camcorderList) {
@@ -137,7 +145,7 @@ public class ResourceCentre {
 		for (int i = 0; i < camcorderList.size(); i++) {
 
 			output += String.format("%-84s\n", camcorderList.get(i).toString());
-					
+
 		}
 		return output;
 	}
@@ -151,11 +159,11 @@ public class ResourceCentre {
 
 	public static String retrieveAllChromebook(ArrayList<Chromebook> chromebookList) {
 		String output = "";
-		
+
 		for (int i = 0; i < chromebookList.size(); i++) {
 
+
 			output += String.format("%-84s\n", chromebookList.get(i).toString());
-				
 		}
 		return output;
 	}
