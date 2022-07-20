@@ -4,7 +4,7 @@ public class ResourceCentre {
 	//heather
 	//joleen
 	// tricia
-	//jia cheng
+	//Jia Cheng
 	private static final int OPTION_RETURN = 4;
 	private static final int OPTION_LOAN = 3;
 	private static final int OPTION_ADD = 2;
