@@ -94,7 +94,6 @@ public class ResourceCentre {
 		}
 
 	}
-
 	private static void itemTypeMenu() {
 		ResourceCentre.setHeader("ITEM TYPES");
 		System.out.println("1. Camcorder");
@@ -128,13 +127,12 @@ public class ResourceCentre {
 		}
 		return avail;
 	}
-
 	//================================= Option 1 View (CRUD - Read) =================================
 	public static String retrieveAllCamcorder(ArrayList<Camcorder> camcorderList) {
+		// Set the output as an empty string
 		String output = "";
 
 		for (int i = 0; i < camcorderList.size(); i++) {
-
 			output += String.format("%-84s\n", camcorderList.get(i).toString());
 		}
 		return output;
