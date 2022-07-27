@@ -2,9 +2,10 @@
 import java.util.ArrayList;
 
 public class ResourceCentre {
-	
+	//heather
+	//joleen
 	// tricia
-	
+	//Jia Cheng
 	private static final int OPTION_RETURN = 4;
 	private static final int OPTION_LOAN = 3;
 	private static final int OPTION_ADD = 2;
@@ -98,7 +99,9 @@ public class ResourceCentre {
 
 	}
 
-	private static void itemTypeMenu() {
+
+	public static void itemTypeMenu() {
+
 		ResourceCentre.setHeader("ITEM TYPES");
 		System.out.println("1. Camcorder");
 		System.out.println("2. Chromebook");
@@ -120,7 +123,7 @@ public class ResourceCentre {
 		System.out.println(header);
 		Helper.line(80, "-");
 	}
-
+	
 	public static String showAvailability(boolean isAvailable) {
 		String avail;
 
@@ -134,11 +137,12 @@ public class ResourceCentre {
 
 	//================================= Option 1 View (CRUD - Read) =================================
 	public static String retrieveAllCamcorder(ArrayList<Camcorder> camcorderList) {
+		// Set the output as an empty string :)
 		String output = "";
 
 		for (int i = 0; i < camcorderList.size(); i++) {
-
 			output += String.format("%-84s\n", camcorderList.get(i).toString());
+
 		}
 		return output;
 	}
@@ -149,14 +153,14 @@ public class ResourceCentre {
 		 output += retrieveAllCamcorder(camcorderList);	
 		System.out.println(output);
 	}
-
+	// Jia Cheng modified retrieveAllChromebook()  
 	public static String retrieveAllChromebook(ArrayList<Chromebook> chromebookList) {
 		String output = "";
-		// write your code here
+
 		for (int i = 0; i < chromebookList.size(); i++) {
 
-			output += String.format("%-84s\n", chromebookList.get(i).toString());
 
+			output += String.format("%-84s\n", chromebookList.get(i).toString());
 		}
 		return output;
 	}
@@ -201,6 +205,7 @@ public class ResourceCentre {
 	}
 	
 	//================================= Option 3 Loan (CURD- Update) =================================
+	// By tricia
 	public static boolean doLoanCamcorder(ArrayList<Camcorder> camcorderList, String tag, String dueDate) {
 		
 		boolean isLoaned = false;
@@ -270,6 +275,7 @@ public class ResourceCentre {
 		
 	}
 	//================================= Option 4 Return (CURD- Update)=================================
+	//By Wee Ren
 	public static boolean doReturnCamcorder(ArrayList<Camcorder> camcorderList,String tag) {
 		boolean isReturned = false;
 
@@ -299,6 +305,7 @@ public class ResourceCentre {
 		}
 	}
 	// write your doReturnChromebook code here
+	//By Joleen
 	public static boolean doReturnChromebook(ArrayList<Chromebook> chromebookList,String tag) {
 		boolean isReturned = false;
 
