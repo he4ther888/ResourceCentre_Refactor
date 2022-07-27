@@ -6,41 +6,19 @@ public class Item {
 	private boolean isAvailable;
 
 	public Item(String assetTag, String description) {
-		this.assetTag = assetTag;
-		this.description = description;
+		this.assetTag = assetTag; 
+		this.description = description; 
 		this.dueDate = "";
 		this.isAvailable = true;
 	}
+	
 	public String toString() {
-		
-<<<<<<< HEAD
-		// Write your codes here
-		String itemInfo = String.format("%-10s %-30s %-10s %-10s",
-				assetTag,
-				description, 
-				showAvailability(isAvailable),
-				dueDate);
-		
-		return itemInfo;
-=======
-		// Write your codes here :)
 		String itemInfo = String.format("%-10s %-30s %-10s %-10s", 
 				assetTag,
 				description, 
 				showAvailability(isAvailable),
 				dueDate);
 		return itemInfo;
-	}
-	public static String showAvailability(boolean isAvailable) {
-		String avail;
-
-		if (isAvailable == true) {
-			avail = "Yes";
-		} else {
-			avail = "No";
-		}
-		return avail;
->>>>>>> branch 'master' of https://github.com/he4ther888/ResourceCentre_Refactor.git
 	}
 	
 	public String showAvailability(boolean isAvailable) {
@@ -53,7 +31,6 @@ public class Item {
 		}
 		return avail;
 	}
-	
 	public String getAssetTag() {
 		return assetTag;
 	}
