@@ -129,7 +129,7 @@ public class ResourceCentre {
 	}
 	//================================= Option 1 View (CRUD - Read) =================================
 	public static String retrieveAllCamcorder(ArrayList<Camcorder> camcorderList) {
-		// Set the output variable as an empty string
+		// Set the output as an empty string
 		String output = "";
 
 		for (int i = 0; i < camcorderList.size(); i++) {
